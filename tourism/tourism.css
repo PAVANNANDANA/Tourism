@@ -1,0 +1,171 @@
+
+.about {
+  background: #ffffffcc; 
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.about h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Popular Destinations Section */
+.destinations {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.destinations h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 22px;
+  margin: 15px 0 10px;
+  color: #222;
+}
+
+.card p {
+  font-size: 16px;
+  color: #555;
+  padding: 0 15px 20px;
+}
+
+/* Hero Section */
+.hero {
+  background: url("beach.jpg") center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+/* Dark overlay for readability */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 20px 20px;
+  background: #ff7e5f;
+  color: white;
+  border-radius: 30px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.hero {
+  background: url("hero-bg.png") center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.3)
+  ); 
+}
+
+
+a {
+  text-decoration: none; /* remove underline from links */
+  color: inherit; /* match surrounding text color */
+}
+
+.btn {
+  display: inline-block;
+  background: #ff5a5f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.btn:hover {
+  background: #e0484c;
+}
+
+
